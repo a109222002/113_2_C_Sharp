@@ -34,7 +34,8 @@ namespace Program5_14
                     sum += temp ;//將讀到的資料轉換為整數並加到sum變數中
                     listBox1.Items.Add(temp);//將讀到的資料加到listBox1控制項中
                 }
-                listBox1.Items.Add("總共有" + count+"個數字\n總和："+sum);//將總和加到listBox1控制項中
+                listBox1.Items.Add("總共有" + count+" 個數字");//將總和加到listBox1控制項中
+                listBox1.Items.Add("總合為" + sum);
                 inputFile.Close();//關閉檔案
             }
             catch (Exception ex)

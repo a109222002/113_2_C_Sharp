@@ -26,7 +26,7 @@ namespace Program5_13
             {
                 if (saveFile.ShowDialog() == DialogResult.OK)
                 {
-                    outputFile = File.CreateText("numbers.txt");//開啟檔案,寫入數字
+                    outputFile = File.CreateText(saveFile.FileName);//開啟檔案,寫入數字
                     if (int.TryParse(textBox1.Text, out count))//判斷是否為數字
                     {
                         for (int i = 0; i < count; i++)
