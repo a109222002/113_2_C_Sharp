@@ -12,7 +12,7 @@ namespace Program6_10
     public partial class Form1 : Form
     {
         Random rand = new Random();
-        string compChoice, myChoice, winner;
+        string compChoice, winner;
         public Form1()
         {
             InitializeComponent();
