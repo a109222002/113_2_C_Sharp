@@ -43,7 +43,7 @@ namespace Lottery_Numbers
 
         private void exitButton_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }
