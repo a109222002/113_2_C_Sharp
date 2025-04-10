@@ -31,6 +31,10 @@ namespace Array_To_File
                 outputFile = File.CreateText("Values.txt");
 
                 // 將陣列的內容寫入檔案。
+                //for (int index = 0; index < numbers.Length; index++)
+                //{ 
+                //    outputFile.WriteLine(numbers[index]);
+                //}
                 foreach (int number in numbers)
                 {
                     outputFile.WriteLine(number);
