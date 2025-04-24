@@ -18,27 +18,6 @@ namespace Test_Average
             InitializeComponent();
         }
 
-        // Average 方法接受一個整數陣列作為參數，
-        // 並返回該陣列中數值的平均值。
-        private Average()
-        {
-            
-        }
-
-        // Highest 方法接受一個整數陣列作為參數，
-        // 並返回該陣列中的最大值。
-        private Highest()
-        {
-
-        }
-
-        // Lowest 方法接受一個整數陣列作為參數，
-        // 並返回該陣列中的最小值。
-        private Lowest()
-        {
-
-        }
-
         private void getScoresButton_Click(object sender, EventArgs e)
         {
             const int SIZE = 48;
@@ -129,13 +108,18 @@ namespace Test_Average
             if (openFile.FileName != "")
             {
                 // 顯示文件名
-                fileNameLabel.Text = openFile.FileName;
+                fileNamelabel.Text = openFile.FileName;
             }
             else
             {
                 // 清空文件名
                 fileNameLabel.Text = "";
             }
+        }
+
+        private void deleteButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

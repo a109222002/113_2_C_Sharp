@@ -38,6 +38,7 @@
             this.averageScoreLabel = new System.Windows.Forms.Label();
             this.getScoresButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
+            this.deleteButton = new System.Windows.Forms.Button();
             this.openFile = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
@@ -115,23 +116,31 @@
             // 
             // getScoresButton
             // 
-            this.getScoresButton.Location = new System.Drawing.Point(90, 138);
+            this.getScoresButton.Location = new System.Drawing.Point(50, 138);
             this.getScoresButton.Name = "getScoresButton";
             this.getScoresButton.Size = new System.Drawing.Size(75, 21);
             this.getScoresButton.TabIndex = 13;
             this.getScoresButton.Text = "取得分數";
             this.getScoresButton.UseVisualStyleBackColor = true;
-            this.getScoresButton.Click += new System.EventHandler(this.getScoresButton_Click);
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(171, 138);
+            this.exitButton.Location = new System.Drawing.Point(212, 138);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(75, 21);
             this.exitButton.TabIndex = 14;
             this.exitButton.Text = "退出";
             this.exitButton.UseVisualStyleBackColor = true;
-            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            // 
+            // deleteButton
+            // 
+            this.deleteButton.Location = new System.Drawing.Point(131, 138);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(75, 21);
+            this.deleteButton.TabIndex = 15;
+            this.deleteButton.Text = "刪除";
+            this.deleteButton.UseVisualStyleBackColor = true;
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
             // openFile
             // 
@@ -143,6 +152,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(336, 173);
+            this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.getScoresButton);
             this.Controls.Add(this.averageScoreLabel);
@@ -172,6 +182,7 @@
         private System.Windows.Forms.Label averageScoreLabel;
         private System.Windows.Forms.Button getScoresButton;
         private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.Button deleteButton;
         private System.Windows.Forms.OpenFileDialog openFile;
     }
 }

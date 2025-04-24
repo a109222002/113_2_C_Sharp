@@ -1,0 +1,14 @@
+在介面上，新增一個listbox跟一個按鍵
+1.按鍵的text屬性是"排序"
+2.listbox用來顯示排序後的分數
+3.
+
+
+
+
+完成deleteButton_Click(object sender, EventArgs e)方法，可以刪除使用者在textScoresListBox所點選的成績，服了在List中刪除資料外，在textScoreListBox跟SortedScoresListBox中顯示的資料同步更新，給我完整程式
+
+
+依照目前刪除的方法，多筆同分的資料會怎麼處理
+
+修改刪除的方法，只要刪除我在listbox中所點選位置的那筆資料
