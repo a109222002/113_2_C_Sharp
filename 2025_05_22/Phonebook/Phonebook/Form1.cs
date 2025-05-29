@@ -101,7 +101,7 @@ namespace Phonebook
             else
             {
                 // 如果沒有選取任何項目，清空顯示的電話號碼
-                phoneLabel.Text = "無資料";
+                phoneLabel.Text = "";
             }
         }
 
